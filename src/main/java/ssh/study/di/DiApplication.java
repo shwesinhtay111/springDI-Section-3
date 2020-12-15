@@ -13,6 +13,7 @@ public class DiApplication {
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(DiApplication.class, args);
 		MyController myController = (MyController) ctx.getBean("myController");
+		System.out.println("...............Primary Bean");
 		String greeting = myController.sayHello();
 		System.out.println(greeting);
 		System.out.println("................Property");
