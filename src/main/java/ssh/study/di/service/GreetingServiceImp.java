@@ -1,10 +1,12 @@
 package ssh.study.di.service;
 
-public class GreetingServiceImp implements GreetingService {
+import org.springframework.stereotype.Service;
 
+@Service
+public class GreetingServiceImp implements GreetingService {
     @Override
     public String sayGreeting() {
-        return "HelloWorld";
+        return "Hello World";
     }
     
 }

@@ -8,7 +8,6 @@ import ssh.study.di.service.GreetingServiceImp;
 
 public class SetterInjectedControllerTest {
     SetterInjectedController controller;
-
     @BeforeEach
     void setUp(){
         controller = new SetterInjectedController();

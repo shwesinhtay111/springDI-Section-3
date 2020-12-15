@@ -12,10 +12,8 @@ public class ConstructorInjectedControllerTest {
     void setUp(){
         controller = new ConstructorInjectedController(new GreetingServiceImp());
     }
-
     @Test
     void getGreeting(){
         System.out.println(controller.sayGeeting());
-    }
-    
+    }    
 }
