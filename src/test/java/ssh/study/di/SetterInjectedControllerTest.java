@@ -4,14 +4,14 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import ssh.study.di.controllers.SetterInjectedController;
-import ssh.study.di.service.GreetingServiceImp;
+import ssh.study.di.service.ConstructorGreetingService;
 
 public class SetterInjectedControllerTest {
     SetterInjectedController controller;
     @BeforeEach
     void setUp(){
         controller = new SetterInjectedController();
-        controller.setGreetingService(new GreetingServiceImp());
+        controller.setGreetingService(new ConstructorGreetingService());
     }
     @Test
     void getGreeting(){
