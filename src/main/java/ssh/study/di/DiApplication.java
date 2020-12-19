@@ -3,6 +3,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+import org.springframework.context.annotation.ComponentScan;
 import ssh.study.di.controllers.ConstructorInjectedController;
 import ssh.study.di.controllers.I18nController;
 import ssh.study.di.controllers.MyController;
@@ -10,6 +11,7 @@ import ssh.study.di.controllers.PropertyInjectedController;
 import ssh.study.di.controllers.SetterInjectedController;
 
 @SpringBootApplication
+@ComponentScan( basePackages = {"ssh.service", "ssh.study.di"})
 public class DiApplication {
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(DiApplication.class, args);
